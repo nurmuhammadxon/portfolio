@@ -29,7 +29,7 @@ function AboutMe() {
                 </p>
             </div>
             <div className="max-w-3xl w-full flex flex-col justify-center items-center">
-                <div className="w-full flex flex-wrap gap-2.5 animated animatedFadeInUp fadeInUp">
+                <div className="w-full flex justify-center sm:justify-around flex-wrap gap-2.5 animated animatedFadeInUp fadeInUp">
                     {mySkill.map((skil) => (
                         <div
                             key={skil.id}
