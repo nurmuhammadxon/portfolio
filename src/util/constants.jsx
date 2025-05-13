@@ -6,6 +6,7 @@ import mathematicsTeacher from '../assets/mathematics-teacher.png'
 import thmdb from '../assets/THMDB.png'
 import calculator from '../assets/Calculator.png'
 import matrix from '../assets/Matrix.png'
+import onlineStore from '../assets/onlineStore.png'
 
 export const headerNavBar = [
     {
@@ -106,6 +107,14 @@ export const projectData = [
         technology: ['React', 'Redux', 'TailwindCss'],
         link: 'https://todo-list-theta-dusky.vercel.app/',
         image: todoList,
+    },
+    {
+        id: uuidv4(),
+        title: 'Online Store',
+        des: 'React, TailwindCss va Axios orqali Online do\'kon uchun qilingan web sayt. Diplom ishi uchun qilingan lekin olib foydalansa ham bo\'ladi',
+        technology: ['React', 'Axios', 'TailwindCss'],
+        link: 'https://online-store-tau-five.vercel.app/',
+        image: onlineStore,
     },
     {
         id: uuidv4(),
