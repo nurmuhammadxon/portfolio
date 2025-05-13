@@ -6,7 +6,7 @@ import myPhoto from '../assets/myPhoto.png'
 function HomePage() {
     const navigate = useNavigate()
     return (
-        <section className='w-full flex flex-col sm:flex-row items-center justify-center gap-5 px-5 py-24 sm:py-20'>
+        <section className='w-full flex flex-col-reverse sm:flex-row items-center justify-center gap-5 px-5 py-5 sm:py-20'>
             <div className='flex flex-col items-start justify-center'>
                 <h1 className='text-3xl font-bold flex items-center gap-2.5 animated animatedFadeInUp fadeInUp'>
                     Muhiddinov  <FaCode className="text-blue-600 text-4xl" />

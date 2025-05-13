@@ -34,13 +34,12 @@ function Projects() {
                 <div className="w-full flex items-center justify-start gap-2.5 border-b border-gray-800 dark:border-gray-400 pb-4">
                     <h3 className="text-2xl font-bold text-blue-800 dark:text-yellow-600">Projectlar</h3>
                 </div>
-
-                <div className="w-full flex flex-col pt-5">
+                <div className="w-full flex flex-col py-5">
                     {projectData.map((item) => (
                         <div
                             key={item.id}
                             id={`project-${item.id}`}
-                            className="h-44 bg-sky-50 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
+                            className="bg-sky-50 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
                         >
                             <div className="w-full sm:w-1/3 overflow-hidden rounded-md">
                                 <img
