@@ -129,7 +129,7 @@ export const projectData = [
         title: 'The Movie Data Base',
         des: 'React, React Readux, Axios va TailwindCss texnologiya orqali apilar orqali qilinga web sayt',
         technology: ['React', 'Redux', 'TailwindCss', 'Axios'],
-        link: 'https://mathematics-teacher.vercel.app/',
+        link: 'https://thmdb-projcet.vercel.app/',
         image: thmdb,
     },
     {
