@@ -1,6 +1,7 @@
 import React from 'react'
-import { projectData } from '../util/constants'
 import { Link } from 'react-router-dom'
+import { FcMultipleDevices } from "react-icons/fc";
+import { projectData } from '../util/constants'
 
 function Projects() {
     return (
@@ -8,7 +9,7 @@ function Projects() {
             <div className="max-w-4xl w-full flex flex-col sm:flex-row items-center justify-between gap-2.5">
                 <div className='w-full sm:w-1/2'>
                     <h2 className="text-3xl font-bold dark:text-yellow-600 animated animatedFadeInDown fadeInDown">Project</h2>
-                    <p className="mt-2 text-gray-600 dark:text-[#BFBFBF] font-normal animated animatedFadeInUp fadeInUp">
+                    <p className="mt-2 text-gray-800 dark:text-[#BFBFBF] font-normal animated animatedFadeInUp fadeInUp">
                         Har bir loyiha — yangi imkon, <br />
                         har bir kod satri — yangi izlanish.
                     </p>
@@ -32,14 +33,17 @@ function Projects() {
             </div>
             <div className="max-w-4xl w-full flex flex-col items-start justify-start animated animatedFadeInUp fadeInUp">
                 <div className="w-full flex items-center justify-start gap-2.5 border-b border-gray-800 dark:border-gray-400 pb-4">
-                    <h3 className="text-2xl font-bold text-blue-800 dark:text-yellow-600">Projectlar</h3>
+                    <h3 className="text-2xl font-bold text-gray-700 dark:text-yellow-600">
+                        Projectlar
+                    </h3>
+                    <FcMultipleDevices className='text-4xl' />
                 </div>
                 <div className="w-full flex flex-col py-5">
                     {projectData.map((item) => (
                         <div
                             key={item.id}
                             id={`project-${item.id}`}
-                            className="bg-sky-50 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
+                            className="bg-gray-200 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
                         >
                             <div className="w-full sm:w-1/3 overflow-hidden rounded-md">
                                 <img

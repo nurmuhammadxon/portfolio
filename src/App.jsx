@@ -8,6 +8,7 @@ import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
+import BlogDetail from './pages/BlogDetail'
 
 function App() {
   const router = createBrowserRouter([
@@ -29,7 +30,13 @@ function App() {
         },
         {
           path: 'blog',
-          element: <Blog />
+          element: <Blog />,
+          children: [
+            {
+              path: ':id',
+              element: <BlogDetail />
+            }
+          ]
         },
         {
           path: 'contact',

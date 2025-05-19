@@ -92,11 +92,19 @@ export const mySkill = [
 
 export const blogData = [
     {
-        id: uuidv4(),
-        title: "TATU",
-        des: "TATU da 2-kursda 2-kurda o'qiyapman",
-        date: '12-05-2025'
-    },
+        id: "QWErty123456",
+        title: "TATUda talabalik hayoti",
+        slug: "tatu-talabalik-hayoti",
+        des: "TATU da 2-kursda o'qish tajribam haqida qisqacha...",
+        content: "TATUda o'qish boshlanishi hayajonli bo'ldi. O'qituvchilar, kurslar, do'stlar...",
+        image: "https://firebasestorage.googleapis.com/.../tatu.jpg",
+        author: "Ali Valiyev",
+        tags: ["TATU", "talaba", "student life"],
+        date: "12.05.2025",
+        readingTime: "3 min read",
+        likes: 0,
+        views: 0
+    }
 ];
 
 export const projectData = [
