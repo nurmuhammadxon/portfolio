@@ -33,7 +33,7 @@ function AboutMe() {
                     {mySkill.map((skil) => (
                         <div
                             key={skil.id}
-                            className="w-32 py-2 px-3.5 bg-gray-500 dark:bg-gray-800 flex flex-col items-center justify-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+                            className="w-32 py-2.5 px-3.5 bg-gray-500 dark:bg-gray-800 flex flex-col items-center justify-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
                         >
                             <div className="h-24 flex items-center justify-center">
                                 {skil.icon ? skil.icon : <FaImage className='text-8xl' />}
