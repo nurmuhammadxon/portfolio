@@ -16,7 +16,6 @@ function App() {
     {
       path: '/',
       element: <MainLayout />,
-      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
@@ -45,6 +44,10 @@ function App() {
           element: <Contact />
         },
       ]
+    },
+    {
+      path: '*',
+      element: <ErrorPage />
     }
   ])
 
