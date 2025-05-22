@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 // images
 import todoList from '../assets/TodoList.png'
 import mathematicsTeacher from '../assets/mathematics-teacher.png'
@@ -153,12 +154,18 @@ export const contacts = [
         id: uuidv4(),
         title: '+998 (93) 245 20 05',
         icon: <FaPhoneAlt />,
-        link: ''
+        link: 'tel:+998932452005'
     },
     {
         id: uuidv4(),
         title: 'n_fozilovich',
         icon: <FaTelegramPlane />,
         link: 'https://t.me/n_fozilovich',
-    }
+    },
+    {
+        id: uuidv4(),
+        title: 'muhiddinovnurmuhammadxon1@gmail.com',
+        icon: <IoMail />,
+        link: 'mailto:muhiddinovnurmuhammadxon1@gmail.com',
+    },
 ];
