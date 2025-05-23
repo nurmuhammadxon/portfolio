@@ -117,14 +117,6 @@ export const projectData = [
     },
     {
         id: uuidv4(),
-        title: 'Mathematics Teacher',
-        des: 'HTML, CSS va JavaScript texnologiyalari orqali matematika o\'qituvchisiga qilingan web sayt',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://mathematics-teacher.vercel.app/',
-        image: mathematicsTeacher,
-    },
-    {
-        id: uuidv4(),
         title: 'The Movie Data Base',
         des: 'React, React Readux, Axios va TailwindCss texnologiya orqali apilar orqali qilinga web sayt',
         technology: ['React', 'Redux', 'TailwindCss', 'Axios'],
@@ -138,14 +130,6 @@ export const projectData = [
         technology: ['HTML', 'CSS', 'JavaScript'],
         link: 'https://calculator-sigma-flame-97.vercel.app/',
         image: calculator,
-    },
-    {
-        id: uuidv4(),
-        title: 'Matrix',
-        des: 'HTML, CSS va JavaScript texnologiyalari orqali qilingan matritsalarni qo\'shish ayirish ko\'paytirsh va ularning determinantini hisoblovchi web sayt',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://uzmatrix.netlify.app/',
-        image: matrix,
     },
 ];
 
