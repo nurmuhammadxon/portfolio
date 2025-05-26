@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react'
 
 function useTheme() {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
+    const [theme, setTheme] = useState(sessionStorage.getItem('theme') || 'dark')
 
     const element = document.documentElement
 
     const applyTheme = (currentTheme) => {
         if (currentTheme === 'dark') {
             element.classList.add('dark')
-            localStorage.setItem('theme', 'dark')
+            sessionStorage.setItem('theme', 'dark')
         } else {
             element.classList.remove('dark')
-            localStorage.setItem('theme', 'light')
+            sessionStorage.setItem('theme', 'light')
         }
     }
 
