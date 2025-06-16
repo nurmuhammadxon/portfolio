@@ -12,14 +12,29 @@ function AboutMe() {
                     Assalomu alaykum, men Muhiddinov — front-end dasturchiman.
                 </h2>
                 <div
-                    className='my-3.5 animated animatedFadeInUp fadeInUp'
+                    className='my-3.5 animated animatedFadeInUp fadeInUp flex gap-5'
                     style={{ animationDelay: '300ms' }}
                 >
                     <Link
                         to='https://www.canva.com/design/DAGoG6KxCFo/hdlFEsCGodAYkPDCO5VNjA/edit?utm_content=DAGoG6KxCFo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
-                        className='text-blue-500 hover:text-blue-400 text-xl font-medium'
+                        target='_blank'
+                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
                     >
                         Resume
+                    </Link>
+                    <Link
+                        to='https://t.me/bug404club'
+                        target='_blank'
+                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
+                    >
+                        Telegram guruh
+                    </Link>
+                    <Link
+                        to='https://t.me/code_and_life'
+                        target='_blank'
+                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
+                    >
+                        Telegram kanal
                     </Link>
                 </div>
                 <p className='text-base sm:text-lg leading-relaxed text-justify text-gray-600 dark:text-[#BFBFBF] animated animatedFadeInUp fadeInUp'
