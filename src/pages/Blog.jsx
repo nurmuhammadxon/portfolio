@@ -63,7 +63,7 @@ function Blog() {
                             <div
                                 key={item.id}
                                 id={`blog-${item.id}`}
-                                className="h-44 bg-gray-200 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
+                                className="h-96 sm:h-44 bg-gray-200 dark:bg-gray-900 py-2.5 px-3.5 rounded-lg mb-4 flex flex-col sm:flex-row cursor-pointer transition-all duration-300 group hover:shadow-lg"
                             >
                                 {/* Rasm qismi */}
                                 <div className="w-full sm:w-1/3 overflow-hidden rounded-md">

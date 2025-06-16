@@ -58,7 +58,7 @@ function BlogDetail() {
                         </div>
 
                         {/* Rasm */}
-                        <div className="w-full h-48 sm:h-64 overflow-hidden rounded-md mb-6">
+                        <div className="w-full h-48 sm:h-[300px] overflow-hidden rounded-md mb-6">
                             <img
                                 src={blogData.image}
                                 alt={blogData.title}
