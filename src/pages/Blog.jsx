@@ -68,10 +68,11 @@ function Blog() {
                                 {/* Rasm qismi */}
                                 <div className="w-full sm:w-1/3 overflow-hidden rounded-md">
                                     <img
-                                        src={item.image}
+                                        src={`${item.image}`}
                                         alt={item.title}
                                         className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-all duration-300 ease-in-out"
                                     />
+                                    {console.log(item.image)}
                                 </div>
 
                                 {/* Matn qismi */}
