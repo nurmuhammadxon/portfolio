@@ -12,6 +12,11 @@ import onlineStore from '../assets/onlineStore.png'
 export const headerNavBar = [
     {
         id: uuidv4(),
+        title: 'Home',
+        link: '/',
+    },
+    {
+        id: uuidv4(),
         title: 'Projects',
         link: '/projects',
     },

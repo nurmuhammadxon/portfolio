@@ -9,6 +9,12 @@
     --color-gainsboro: #DCDCDC;
 }
 
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: #f8deff;
+}
+
 /* animation */
 @keyframes fadeInUp {
     from {
