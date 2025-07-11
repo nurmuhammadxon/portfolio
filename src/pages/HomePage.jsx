@@ -5,6 +5,7 @@ import myPhoto from '../assets/myPhoto.png'
 
 function HomePage() {
     const navigate = useNavigate()
+    
     return (
         <section className='w-full flex flex-col-reverse sm:flex-row items-center justify-center gap-5 px-5 py-5 sm:py-20'>
             <div className='flex flex-col items-start justify-center'>
@@ -17,7 +18,7 @@ function HomePage() {
                     Men yarataman. Yaxshilayman. Mukammallashtiraman.
                 </p>
                 <div className='mt-5 flex gap-4 text-2xl'>
-                    <span className='size-10 rounded-md bg-gray-400 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-gray-500 dark:hover:bg-[#141414] hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
+                    <span className='size-10 rounded-md bg-gray-300 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-gray-500 dark:hover:bg-[#141414] hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
                         style={{ animationDelay: '250ms' }}
                     >
                         <Link to="https://github.com/nurmuhammadxon" target="_blank" rel="noopener noreferrer">
@@ -26,7 +27,7 @@ function HomePage() {
                             </svg>
                         </Link>
                     </span>
-                    <span className='size-10 rounded-md bg-gray-400 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-blue-500 dark:hover:bg-blue-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
+                    <span className='size-10 rounded-md bg-gray-300 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-blue-500 dark:hover:bg-blue-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
                         style={{ animationDelay: '300ms' }}
                     >
                         <Link to="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
@@ -35,7 +36,7 @@ function HomePage() {
                             </svg>
                         </Link>
                     </span>
-                    <span className='size-10 rounded-md bg-gray-400 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-sky-500 dark:hover:bg-sky-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
+                    <span className='size-10 rounded-md bg-gray-300 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-sky-500 dark:hover:bg-sky-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
                         style={{ animationDelay: '350ms' }}
                     >
                         <Link to="https://t.me/n_fozilovich" target="_blank" rel="noopener noreferrer">
@@ -44,7 +45,7 @@ function HomePage() {
                             </svg>
                         </Link>
                     </span>
-                    <span className='size-10 rounded-md bg-gray-400 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-red-400 dark:hover:bg-red-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
+                    <span className='size-10 rounded-md bg-gray-300 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-red-400 dark:hover:bg-red-950 hover:scale-110 transition-all duration-400 ease-initial animated animatedFadeInUp fadeInUp'
                         style={{ animationDelay: '400ms' }}
                     >
                         <Link to="https://www.youtube.com/@fozilovich" target="_blank" rel="noopener noreferrer">
@@ -64,7 +65,7 @@ function HomePage() {
                 </div>
                 <div className='w-full flex items-center sm:justify-end sm:pr-2.5'>
                     <button
-                        className='mt-5 py-1.5 sm:py-2 px-2.5 sm:px-3.5 bg-gray-400 dark:bg-gray-800 shadow-md rounded-lg text-sm sm:text-base font-semibold hover:scale-105 transition-all duration-300 ease-in cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 animated animatedFadeInUp fadeInUp'
+                        className='mt-5 py-1.5 sm:py-2 px-2.5 sm:px-3.5 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg text-sm sm:text-base font-semibold hover:scale-105 transition-all duration-300 ease-in cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800/80 animated animatedFadeInUp fadeInUp'
                         style={{ animationDelay: '300ms' }}
                         onClick={() => navigate('/about')}
                     >
