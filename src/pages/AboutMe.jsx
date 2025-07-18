@@ -1,42 +1,14 @@
 import React from 'react'
 import { FaImage } from "react-icons/fa";
 import { mySkill } from '../util/constants'
-import { Link } from 'react-router-dom';
 
 function AboutMe() {
-
     return (
-        <section className='w-full flex flex-col items-center justify-center gap-6 px-6 sm:px-12 py-5 sm:pt-20 bg-lightMode dark:bg-darkMode text-softDark dark:text-gainsboro'>
+        <section className='w-full flex flex-col items-center justify-center gap-6 px-6 sm:px-12 py-5 sm:pt-10 bg-lightMode dark:bg-darkMode text-softDark dark:text-gainsboro'>
             <div className='max-w-3xl w-full'>
                 <h2 className='text-lg sm:text-2xl font-semibold sm:font-bold mb-2 md:mb-4 animated animatedFadeInDown fadeInDown'>
                     Assalomu alaykum, men Muhiddinov — front-end dasturchiman.
                 </h2>
-                <div
-                    className='my-3.5 animated animatedFadeInUp fadeInUp flex gap-5'
-                    style={{ animationDelay: '300ms' }}
-                >
-                    <Link
-                        to='https://www.canva.com/design/DAGoG6KxCFo/hdlFEsCGodAYkPDCO5VNjA/edit?utm_content=DAGoG6KxCFo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
-                        target='_blank'
-                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
-                    >
-                        Resume
-                    </Link>
-                    <Link
-                        to='https://t.me/bug404club'
-                        target='_blank'
-                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
-                    >
-                        Telegram guruh
-                    </Link>
-                    <Link
-                        to='https://t.me/code_and_life'
-                        target='_blank'
-                        className='text-blue-500 hover:text-blue-400 text-xl font-medium hover:scale-110 duration-300'
-                    >
-                        Telegram kanal
-                    </Link>
-                </div>
                 <p className='text-base sm:text-lg leading-relaxed text-justify text-gray-600 dark:text-[#BFBFBF] animated animatedFadeInUp fadeInUp'
                     style={{ animationDelay: '150ms' }}
                 >
@@ -60,19 +32,33 @@ function AboutMe() {
                 <div className="w-full flex justify-center sm:justify-around flex-wrap gap-2.5 animated animatedFadeInDown fadeInDown"
                     style={{ animationDelay: '350ms' }}
                 >
-                    {mySkill.map((skil) => (
-                        <div
-                            key={skil.id}
-                            className="w-32 py-2.5 px-3.5 bg-gray-500 dark:bg-gray-800 flex flex-col items-center justify-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
-                        >
-                            <div className="h-24 flex items-center justify-center">
-                                {skil.icon ? skil.icon : <FaImage className='text-8xl' />}
+                    {mySkill.map((skill) => {
+                        const IconComponent = skill.icon;
+                        return (
+                            <div
+                                key={skill.id}
+                                className="w-32 py-2.5 px-3.5 bg-gray-500 dark:bg-gray-800 flex flex-col items-center justify-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer"
+                            >
+                                <div className="h-24 flex items-center justify-center">
+                                    {
+                                        typeof IconComponent === 'function' ? (
+                                            <IconComponent
+                                                size={80}
+                                                style={{ color: `${skill.color}` }}
+                                            />
+                                        ) : typeof IconComponent === 'string' && IconComponent !== '' ? (
+                                            <span dangerouslySetInnerHTML={{ __html: IconComponent }} />
+                                        ) : (
+                                            IconComponent
+                                        )
+                                    }
+                                </div>
+                                <h4 className="text-lg font-medium mt-2 text-gray-900 dark:text-gray-100">
+                                    {skill.name}
+                                </h4>
                             </div>
-                            <h4 className="text-lg font-medium mt-2 text-gray-900 dark:text-gray-100">
-                                {skil.name}
-                            </h4>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </section>

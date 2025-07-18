@@ -9,6 +9,7 @@ import { db } from '../firebase/config'
 function Blog() {
     const [blogData, setBlogData] = useState([])
 
+    
     const getDocuments = async () => {
         const querySnapshot = await getDocs(collection(db, "blogs"));
         const data = []
@@ -20,7 +21,6 @@ function Blog() {
 
     useEffect(() => {
         getDocuments()
-
     }, [])
 
     return (
