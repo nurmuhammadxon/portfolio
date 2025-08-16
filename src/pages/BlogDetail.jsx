@@ -19,10 +19,9 @@ function BlogDetail() {
 
             });
             const foundBlog = data.find(i => i.id === Id);
-            console.log(data);
             setBlogData(foundBlog || {});
         } catch (error) {
-            console.log(error);
+            console.error(error);
         } finally {
             setLoading(false)
         }
