@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 import { FcCalendar } from "react-icons/fc";
 // firebase
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase/config";
+import { db } from "../firebase/config.js";
 
 function Blog() {
   const [blogData, setBlogData] = useState([]);

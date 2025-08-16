@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FaCode } from "react-icons/fa";
 // firebase
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase/config";
+import { db } from "../firebase/config.js";
 // photo
 import myPhoto from "../assets/myPhoto.png";
 import SocialLink from "../components/SocialLink";
