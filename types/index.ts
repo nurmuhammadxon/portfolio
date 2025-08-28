@@ -18,10 +18,20 @@ export interface ITools {
 	tools: string[]
 }
 
-export interface IProjects {
-	name: string
-	description: string
-	url: string
-	image: { url: string }
-	skills: ISkills[]
+interface Skill {
+  name: string
+  color: {
+    hex: string
+  }
 }
+
+export interface IProjects {
+  name: string
+  description: string
+  url: string
+  image?: {
+    url: string
+  }
+  skills?: Skill[]
+}
+

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '../ui/card'
+import { ISkills } from '@/types'
 
 function ProjectCard({ project }: { project: any }) {
 	return (
@@ -23,7 +24,7 @@ function ProjectCard({ project }: { project: any }) {
 				</p>
 
 				<div className='flex flex-wrap gap-2 mt-3'>
-					{project.skills?.map(skill => (
+					{project.skills?.map((skill: ISkills) => (
 						<span
 							key={skill.name}
 							className='px-2 py-1 rounded text-xs text-amber-50 font-medium'
