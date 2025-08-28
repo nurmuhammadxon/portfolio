@@ -13,7 +13,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 			{project.image?.url && (
 				<div className='overflow-hidden rounded-xl'>
 					<Image
-						src={project.image.url}
+						src={project.image?.url || '/fallback.png'}
 						alt={project.name}
 						width={500}
 						height={300}
@@ -24,7 +24,9 @@ function ProjectCard({ project }: ProjectCardProps) {
 			)}
 			<div className='p-4 pt-1.5'>
 				<h2 className='text-xl font-semibold uppercase'>{project.name}</h2>
-				<p className='text-muted-foreground text-sm my-2'>{project.description}</p>
+				<p className='text-muted-foreground text-sm my-2'>
+					{project.description}
+				</p>
 
 				<div className='flex flex-wrap gap-2 mt-3'>
 					{project.skills?.map(skill => (

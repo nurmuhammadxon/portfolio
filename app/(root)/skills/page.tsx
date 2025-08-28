@@ -25,7 +25,7 @@ async function SkillsPage() {
 					>
 						<div className='flex-shrink-0'>
 							<Image
-								src={skill.image.url}
+								src={skill.image?.url || '/fallback.png'}
 								alt={skill.name}
 								width={80}
 								height={80}
