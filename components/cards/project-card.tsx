@@ -1,13 +1,8 @@
-import { IProjects } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '../ui/card'
 
-interface ProjectCardProps {
-	project: IProjects
-}
-
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project }: { project: any }) {
 	return (
 		<Card className='overflow-hidden bg-background !py-0'>
 			<div className='overflow-hidden rounded-xl'>
