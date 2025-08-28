@@ -1,10 +1,10 @@
-import { IProjects, ISkills } from '@/types'
+import { Project, Skill } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card } from '../ui/card'
 
 interface ProjectCardProps {
-	project: IProjects
+	project: Project
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
@@ -29,7 +29,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 				</p>
 
 				<div className='flex flex-wrap gap-2 mt-3'>
-					{project.skills?.map((skill: ISkills) => (
+					{project.skills?.map((skill: Skill) => (
 						<span
 							key={skill.name}
 							className='px-2 py-1 rounded text-xs text-amber-50 font-medium'

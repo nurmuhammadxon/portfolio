@@ -7,21 +7,21 @@ export interface IBtnLink {
 	title: string
 }
 
-export interface ISkills {
+export interface ITools {
+	tools: string[]
+}
+
+export interface Skill {
 	name: string
 	level: number
 	image: { url: string }
 	color: { hex: string }
 }
 
-export interface ITools {
-	tools: string[]
-}
-
-export interface IProjects {
+export interface Project {
 	name: string
 	description: string
 	url: string
 	image?: { url: string }
-	skills?: ISkills[]
+	skills?: Skill[]
 }
