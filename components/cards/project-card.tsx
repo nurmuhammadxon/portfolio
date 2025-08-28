@@ -10,18 +10,17 @@ interface ProjectCardProps {
 function ProjectCard({ project }: ProjectCardProps) {
 	return (
 		<Card className='overflow-hidden bg-background !py-0'>
-			{project.image?.url && (
-				<div className='overflow-hidden rounded-xl'>
-					<Image
-						src={project.image?.url || '/fallback.png'}
-						alt={project.name}
-						width={500}
-						height={300}
-						className='w-full h-48 object-cover hover:scale-105 transition-transform duration-200'
-						priority
-					/>
-				</div>
-			)}
+			<div className='overflow-hidden rounded-xl'>
+				<Image
+					src={project.image?.url || '/fallback.png'}
+					alt={project.name}
+					width={500}
+					height={300}
+					className='w-full h-48 object-cover hover:scale-105 transition-transform duration-200'
+					priority
+				/>
+			</div>
+
 			<div className='p-4 pt-1.5'>
 				<h2 className='text-xl font-semibold uppercase'>{project.name}</h2>
 				<p className='text-muted-foreground text-sm my-2'>
