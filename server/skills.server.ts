@@ -1,4 +1,4 @@
-import { ISkills, ITools } from '@/types'
+import { Skill, ITools } from '@/types'
 import request, { gql } from 'graphql-request'
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT!
@@ -18,7 +18,7 @@ export const getMySkills = async () => {
 			}
 		}
 	`
-	const { skills } = await request<{ skills: ISkills[] }>(graphqlAPI, query)
+	const { skills } = await request<{ skills: Skill[] }>(graphqlAPI, query)
 	return skills
 }
 
