@@ -12,14 +12,16 @@ function ProjectCard({ project }: ProjectCardProps) {
 		<Card className='overflow-hidden bg-background !py-0'>
 			{project.image?.url && (
 				<div className='overflow-hidden rounded-xl'>
-					<Image
-						src={project.image?.url || '/fallback.png'}
-						alt={project.name}
-						width={500}
-						height={300}
-						className='w-full h-48 object-cover hover:scale-105 transition-transform duration-200'
-						priority
-					/>
+					{project.image?.url && (
+						<Image
+							src={project.image?.url || '/fallback.png'}
+							alt={project.name}
+							width={500}
+							height={300}
+							className='object-cover hover:scale-105 transition-transform duration-200'
+							priority
+						/>
+					)}
 				</div>
 			)}
 			<div className='p-4 pt-1.5'>
@@ -29,15 +31,16 @@ function ProjectCard({ project }: ProjectCardProps) {
 				</p>
 
 				<div className='flex flex-wrap gap-2 mt-3'>
-					{project.skills?.map((skill: Skill) => (
-						<span
-							key={skill.name}
-							className='px-2 py-1 rounded text-xs text-amber-50 font-medium'
-							style={{ backgroundColor: skill.color.hex }}
-						>
-							{skill.name}
-						</span>
-					))}
+					{project.skills &&
+						project.skills.map((skill: Skill) => (
+							<span
+								key={skill.name}
+								className='px-2 py-1 rounded text-xs text-amber-50 font-medium'
+								style={{ backgroundColor: skill.color.hex }}
+							>
+								{skill.name}
+							</span>
+						))}
 				</div>
 
 				<Link
