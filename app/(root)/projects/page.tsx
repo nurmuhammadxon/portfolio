@@ -15,8 +15,8 @@ async function ProjectsPage() {
 			<div className='container mx-auto'>
 				<div></div>
 				<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-					{projects.map(project => (
-						<ProjectCard project={project} key={project.name} />
+					{projects.map(i => (
+						<ProjectCard project={i} key={i.name} />
 					))}
 				</div>
 			</div>
