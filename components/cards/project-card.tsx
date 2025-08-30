@@ -44,7 +44,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 				</div>
 
 				<Link
-					href={`https://${project.url}.vercel.app/`}
+					href={project.url ? `https://${project.url}.vercel.app/` : '#'}
 					target='_blank'
 					className='inline-block mt-4 text-blue-600 hover:underline'
 				>
