@@ -23,5 +23,9 @@ export const getProjects = async () => {
 		}
 	`
 	const { projects } = await request<{ projects: Project[] }>(graphqlAPI, query)
-	return projects
+	return projects.map(project => ({
+		...project,
+		image: project.image || { url: '/fallback.png' },
+		skills: project.skills || [],
+	}))
 }
