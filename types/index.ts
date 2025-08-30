@@ -21,7 +21,7 @@ export interface Skill {
 export interface Project {
 	name: string
 	description: string
-	url: string
+	url?: string
 	image?: { url: string }
 	skills?: Skill[]
 }
