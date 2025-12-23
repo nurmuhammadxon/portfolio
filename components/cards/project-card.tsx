@@ -12,7 +12,7 @@ function ProjectCard({ project }: ProjectCardProps) {
 		<Card className='overflow-hidden bg-background !py-0'>
 			<div className='overflow-hidden rounded-xl'>
 				<Image
-					src={project?.image?.url || '/fallback.png'}
+					src={project && project.image ? project.image.url : '/fallback.png'}
 					alt={project?.name || 'Project'}
 					width={500}
 					height={300}
