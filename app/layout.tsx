@@ -18,9 +18,10 @@ const workSans = Work_Sans({
 })
 
 export const metadata: Metadata = {
-	title: 'Mukhiddinov Nurmukhammadkhon',
-	description: 'Portfolio web site',
+  title: 'Muhiddinov – Portfolio',
+  description: 'Nurmuhammadxon Muhiddinovning shaxsiy portfoliysi',
 }
+
 
 export default function RootLayout({ children }: ChildProps) {
 	return (

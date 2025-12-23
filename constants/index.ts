@@ -17,10 +17,10 @@ export const navLinks = [
 		name: 'Projects',
 		slug: '/projects',
 	},
-	{
-		name: 'Blogs',
-		slug: '/blogs',
-	},
+	// {
+	// 	name: 'Blogs',
+	// 	slug: '/blogs',
+	// },
 	{
 		name: 'Contact',
 		slug: '/contact',
