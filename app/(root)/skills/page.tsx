@@ -18,26 +18,31 @@ async function SkillsPage() {
 	return (
 		<section className='my-container'>
 			<div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2.5'>
-				{skills.map(skill => (
-					<Card
-						key={skill.name}
-						className='bg-background p-2 flex flex-row items-center gap-3'
-					>
-						<div className='flex-shrink-0'>
-							<Image
-								src={skill.image?.url || '/fallback.png'}
-								alt={skill.name}
-								width={80}
-								height={80}
-								className='object-cover'
-							/>
-						</div>
-						<div className='w-full flex flex-col'>
-							<h1 className='text-lg font-semibold'>{skill.name}</h1>
-							<SkillBar level={skill.level} color={skill.color.hex} />
-						</div>
-					</Card>
-				))}
+				{skills
+					.filter(Boolean) 
+					.map(skill => (
+						<Card
+							key={skill.name}
+							className='bg-background p-2 flex flex-row items-center gap-3'
+						>
+							<div className='flex-shrink-0'>
+								<Image
+									src={skill.image?.url || '/fallback.png'}
+									alt={skill?.name || 'Skill'}
+									width={80}
+									height={80}
+									className='object-cover'
+								/>
+							</div>
+							<div className='w-full flex flex-col'>
+								<h1 className='text-lg font-semibold'>{skill?.name || 'Unknown'}</h1>
+								<SkillBar
+									level={skill?.level || 0}
+									color={skill?.color?.hex || '#ccc'}
+								/>
+							</div>
+						</Card>
+					))}
 			</div>
 			<div className='mt-5'>
 				<h2 className='flex items-center text-2xl font-semibold'>
