@@ -12,8 +12,8 @@ function ProjectCard({ project }: ProjectCardProps) {
 		<Card className='overflow-hidden bg-background !py-0'>
 			<div className='overflow-hidden rounded-xl'>
 				<Image
-					src={project.image?.url || '/fallback.png'}
-					alt={project.name}
+					src={project?.image?.url || '/fallback.png'}
+					alt={project?.name || 'Project'}
 					width={500}
 					height={300}
 					className='object-cover hover:scale-105 transition-transform duration-200'
@@ -27,20 +27,19 @@ function ProjectCard({ project }: ProjectCardProps) {
 				</p>
 
 				<div className='flex flex-wrap gap-2 mt-3'>
-					{project.skills &&
-						project.skills.map((skill: Skill) => (
-							<span
-								key={skill.name}
-								className='px-2 py-1 rounded text-xs text-amber-50 font-medium'
-								style={{ backgroundColor: skill.color.hex }}
-							>
-								{skill.name}
-							</span>
-						))}
+					{project.skills?.map((skill: Skill) => (
+						<span
+							key={skill.name || Math.random()}
+							className='px-2 py-1 rounded text-xs text-amber-50 font-medium'
+							style={{ backgroundColor: skill?.color?.hex || '#ccc' }}
+						>
+							{skill?.name || 'Skill'}
+						</span>
+					))}
 				</div>
 
 				<Link
-					href={project.url ? `https://${project.url}.vercel.app/` : '#'}
+					href={project?.url ? `https://${project.url}.vercel.app/` : '#'}
 					target='_blank'
 					className='inline-block mt-4 text-blue-600 hover:underline'
 				>
